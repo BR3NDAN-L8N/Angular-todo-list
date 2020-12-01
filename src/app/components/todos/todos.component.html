@@ -1,5 +1,10 @@
 <h1>Todos</h1>
 
 <!-- *ngFor === for-loop ... "todos" is array, "todo" is object in array -->
-<app-todo-item *ngFor="let todosObj of todos" [todo]="todosObj">  
+<!-- deleteTodo comes from todo-item.c.ts, goes to todos.c.ts -->
+<app-todo-item 
+    *ngFor="let todosObj of todos" 
+    [todo]="todosObj" 
+    (deleteTodo)="deleteTodoFromTodos($event)"
+>  
 </app-todo-item>
