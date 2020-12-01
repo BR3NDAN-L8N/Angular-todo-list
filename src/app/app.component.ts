@@ -10,11 +10,11 @@ export class AppComponent {
     
     // constructor runs before component loads
     constructor() {
-        this.changeName('john');
+        // this.changeName('john');
         
     }
 
-    changeName(name) {
-        this.title = name;
-    }
+    // changeName(name) {
+    //     this.title = name;
+    // }
 }

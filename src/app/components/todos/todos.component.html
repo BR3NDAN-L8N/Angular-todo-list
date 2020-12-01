@@ -1,1 +1,5 @@
-<p>todos works!</p>
+<h1>Todos</h1>
+
+<!-- *ngFor === for-loop ... "todos" is array, "todo" is object in array -->
+<app-todo-item *ngFor="let todosObj of todos" [todo]="todosObj">  
+</app-todo-item>
