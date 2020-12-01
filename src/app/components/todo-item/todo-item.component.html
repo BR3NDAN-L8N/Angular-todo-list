@@ -1,4 +1,14 @@
-<p>
-    <!-- "todo.title" comes from the todo-item..ts file -->
-    {{ todo.title }}
-</p>
+<!-- [ngClass] has something to do with setting CSS? -->
+<!-- "setClasses()" is a function in todo-item..ts -->
+<div [ngClass]="setClasses()">
+    <p>
+        <!-- (change) it onChange -->
+        <!-- onToggle(todo) is function ran by onChange -->
+        <input (change)="onToggle(todo)" type="checkbox" />
+        <!-- "todo.title" comes from the todo-item..ts file -->
+        {{ todo.title }}
+        <!-- (click) is onClick() -->
+        <!-- onDelete(todo) is the function ran onClick -->
+        <button (click)="onDelete(todo)" class="delete">X</button>
+    </p>
+</div>
