@@ -1,5 +1,7 @@
 <h1>Todos</h1>
 
+<app-add-todo (addTodo)="addTodoFromTodos($event)"></app-add-todo>
+
 <!-- *ngFor === for-loop ... "todos" is array, "todo" is object in array -->
 <!-- deleteTodo comes from todo-item.c.ts, goes to todos.c.ts -->
 <app-todo-item 
