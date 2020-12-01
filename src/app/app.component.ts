@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'client';
+    title: string = 'Angular Todo List';
+    
+    // constructor runs before component loads
+    constructor() {
+        this.changeName('john');
+        
+    }
+
+    changeName(name) {
+        this.title = name;
+    }
 }
